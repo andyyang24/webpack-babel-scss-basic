@@ -1,0 +1,22 @@
+{
+  "name": "webpack-babel-scss-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Andy Y",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

@@ -1,0 +1,1 @@
+console.log({leatherStrips:12});
