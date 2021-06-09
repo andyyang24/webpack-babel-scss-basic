@@ -1,10 +1,4 @@
-import "../styles/styles.scss";
+import { render } from "react-dom";
+import App from "./components/App";
 
-const elvenShieldRecipe = {
-  leatherStrips: 12,
-};
-const slvenGauntLEtRecipe = {
-  ...elvenShieldRecipe,
-  leather: 1,
-};
-console.log(elvenShieldRecipe, slvenGauntLEtRecipe);
+render(<App />, document.getElementById("root"));

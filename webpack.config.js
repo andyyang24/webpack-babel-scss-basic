@@ -24,14 +24,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
         },
       },
       {
-        test: /\.s?css$/i,
+        test: /\.(s[ac]|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
@@ -43,7 +43,9 @@ module.exports = {
   },
 
   plugins: [new MiniCssExtractPlugin()],
-
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   devtool: "source-map",
 
   devServer: {
