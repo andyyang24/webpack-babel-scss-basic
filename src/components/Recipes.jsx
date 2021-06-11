@@ -18,13 +18,17 @@ const Recipes = () => {
   const [recipe, setRecipe] = useState({});
   return (
     <div>
-      <h3>Current dsadf Recipe: </h3>
-      <button onClick={() => setRecipe(elvenShieldRecipe)}>
-        Elven Shield Recipe
-      </button>
-      <button onClick={() => setRecipe(elvenGauntletsRecipe)}>
-        Elven Gauntlet Recipe
-      </button>
+      <h3>Today's Special: </h3>
+      <div>
+        <button onClick={() => setRecipe(elvenShieldRecipe)}>
+          Wine with Cheeses
+        </button>
+      </div>
+      <div>
+        <button onClick={() => setRecipe(elvenGauntletsRecipe)}>
+          Beer with Chips
+        </button>
+      </div>
       <ul>
         {Object.keys(recipe).map((material) => (
           <li key={material}>

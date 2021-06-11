@@ -9,13 +9,14 @@ const App = () => {
       <section className="hero">
         <main>
           <section>
-            <h1>welcome, eANDY~~</h1>
+            <h1>G'day, let's check out Andy's Menu~</h1>
+
+            <img src={RcSVG} alt="tools" width="300" />
+
+            <img src={RecipeTools} alt="tools" width="300" />
+            <Recipes />
           </section>
         </main>
-        <img src={RcSVG} alt="tools" width="300" />
-
-        <img src={RecipeTools} alt="tools" width="300" />
-        <Recipes />
       </section>
     </>
   );
