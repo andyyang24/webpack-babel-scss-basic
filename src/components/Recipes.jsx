@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 const elvenShieldRecipe = {
-  leatherStrips: 2,
-  ironIngot: 1,
-  refinedMoonStone: 4,
+  Wine: 2,
+  Salt: 1,
+  Cheeses: 4,
 };
 
 const elvenGauntletsRecipe = {
   ...elvenShieldRecipe,
-  leather: 1,
-  refinedMoonstone: 4,
+  Greens: 1,
+  Beef: 4,
 };
 
 console.log(elvenShieldRecipe, elvenGauntletsRecipe);
@@ -21,18 +21,18 @@ const Recipes = () => {
       <h3>Today's Special: </h3>
       <div>
         <button onClick={() => setRecipe(elvenShieldRecipe)}>
-          Wine with Cheeses
+          ~Wine with Cheeses~
         </button>
       </div>
       <div>
         <button onClick={() => setRecipe(elvenGauntletsRecipe)}>
-          Beer with Chips
+          ~Beer with Chips~
         </button>
       </div>
       <ul>
-        {Object.keys(recipe).map((material) => (
-          <li key={material}>
-            {material} : {recipe[material]}
+        {Object.keys(recipe).map((food) => (
+          <li key={food}>
+            {food} : {recipe[food]}
           </li>
         ))}
       </ul>
