@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 const elvenShieldRecipe = {
-  leatherStrips: 2,
-  ironIngot: 1,
-  refinedMoonStone: 4,
+  Wine: 2,
+  Salt: 1,
+  Cheeses: 4,
 };
 
 const elvenGauntletsRecipe = {
   ...elvenShieldRecipe,
-  leather: 1,
-  refinedMoonstone: 4,
+  Greens: 1,
+  Beef: 4,
 };
 
 console.log(elvenShieldRecipe, elvenGauntletsRecipe);
@@ -30,9 +30,9 @@ const Recipes = () => {
         </button>
       </div>
       <ul>
-        {Object.keys(recipe).map((material) => (
-          <li key={material}>
-            {material} : {recipe[material]}
+        {Object.keys(recipe).map((food) => (
+          <li key={food}>
+            {food} : {recipe[food]}
           </li>
         ))}
       </ul>
