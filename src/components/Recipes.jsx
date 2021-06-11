@@ -21,12 +21,12 @@ const Recipes = () => {
       <h3>Today's Special: </h3>
       <div>
         <button onClick={() => setRecipe(elvenShieldRecipe)}>
-          Wine with Cheeses
+          ~Wine with Cheeses~
         </button>
       </div>
       <div>
         <button onClick={() => setRecipe(elvenGauntletsRecipe)}>
-          Beer with Chips
+          ~Beer with Chips~
         </button>
       </div>
       <ul>
